@@ -5,7 +5,8 @@ import java.net.*;
 public class RetrieveURL2 {
     public static void main(String[] args) {
         try {
-            URL u = new URL("https://news.ycombinator.com/");
+            @SuppressWarnings("deprecation")
+            URL u = new URL("https://www.google.com");
             try {
                 URLConnection uc = u.openConnection();
                 InputStream in = uc.getInputStream();
