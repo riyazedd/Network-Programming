@@ -11,7 +11,7 @@ public class AllMimeHeaders {
                 for(int j=0; ; j++){
                     String header= uc.getHeaderField(j);
                     if(header==null) break;
-                    System.out.println(uc.getHeaderField(j)+": "+header);
+                    System.out.println(uc.getHeaderFieldKey(j)+": "+header);
                 }
             }catch(MalformedURLException ex){
                 System.err.println(ex);
